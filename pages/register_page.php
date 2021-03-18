@@ -96,35 +96,34 @@ html {
 						<img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png" class="brand_logo" alt="Logo">
 					</div>
 				</div>
-                
-				<div class="d-flex justify-content-center form_container">
 
-					<form action="register_act.php" method="POST">
+				<div class="d-flex justify-content-center form_container">
+					<form action="../act/register_act.php" method="POST">
                     
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="login" class="form-control input_user" value="" placeholder="Digite seu login">
+							<input type="text" name="login" class="form-control input_user" placeholder="Digite seu login">
 						</div>
 
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="senha" class="form-control input_pass" value="" placeholder="Digite sua senha">
+							<input type="password" name="senha" class="form-control input_pass" placeholder="Digite sua senha">
 						</div>
 
                         <div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="senhaConfirmacao" class="form-control input_pass" value="" placeholder="Confirme sua senha">
+							<input type="password" name="senhaConfirm" class="form-control input_pass" placeholder="Confirme sua senha">
 						</div>
                         
 						
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="button" name="button" class="btn login_btn">Cadastrar</button>
+                            <button type="submit" name="button" class="btn login_btn">Cadastrar</button>
                         </div>
 
 					</form>
