@@ -10,10 +10,9 @@ if($senha != $senhaConfirm){
     $msg_alert = "As senhas não coincidem.";
     header("Location: ../pages/index.php");
 } else {
-    $senhaCifrada = md5($senha);
-    
+
     $link = mysqli_connect("localhost", "root", "", "trabalho-final-odaw");
-    $resultado = "INSERT INTO user (login_user, senha) VALUES ($login, $senha)";
+    $resultado = mysqli_query($link, "INSERT INTO user (id_usuario,login_user, senha) VALUES (DEFAULT, '$login', '$senha')");
 
     if ($resultado == false) {
         $erro = mysqli_error($link);
