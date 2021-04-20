@@ -17,23 +17,39 @@ if (!isset($_SESSION["user"])) {
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../repos/REDDIT-LOGO.svg" type="image/x-icon">
     <title>Publicar</title>
 </head>
-<body>
+<body style="background-color: #60a3bc;">
 
-<form action="../act/publicar_act.php" method="POST">
-    <div id="form-group">
-        <label for="titulo">Título</label>
-        <input type="text" class="form-control-plaintext" id="titulo" name="titulo">
-        
-        <label for="publicacao">Publicação</label>
-        <textarea class="form-control" name="publicacao" rows="4" cols="50">
-        </textarea>
-        <div class="d-flex justify-content-center mt-3 login_container">
-            <button type="submit" name="button" class="btn login_btn">Publicar</button>
+<div class="container p-5">
+        <div class="card" style="background-color: #f39c12;">
+            <div class="card-header">
+                <div class="d-flex justify-content-between col-12">
+                    <div>
+                        <form action="../act/publicar_act.php" method="POST">
+                            <div id="form-group">
+                                <label for="titulo">Título</label>
+                                    <input type="text" class="form-control" id="titulo" name="titulo">
+                                <label for="publicacao">Publicação</label>
+                                <textarea class="form-control" name="publicacao" rows="4" cols="150"></textarea>
+                                <div class="d-flex justify-content-center mt-3 login_container">
+                                    <button type="submit" name="button" class="btn login_btn">Publicar</button>
+                                </div>
+                            </div>
+                        </form>				
+                    </div>
+                <div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 login_container">
+                <a href="master_page.php">
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Voltar</button>
+                </a>
+            </div>
         </div>
     </div>
-</form>
-    
+</div>
+
 </body>
 </html>

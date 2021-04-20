@@ -8,9 +8,11 @@ if (!isset($_SESSION["user"])) {
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 
+$senhacripto = md5($senha);
+
 $link = mysqli_connect("localhost", "root", "", "trabalho-final-odaw");
 
-$resultado = mysqli_query($link, "SELECT * FROM user WHERE login_user='$login' AND senha='$senha'");
+$resultado = mysqli_query($link, "SELECT * FROM user WHERE login_user='$login' AND senha='$senhacripto'");
 
 if(mysqli_num_rows($resultado) > 0){
 

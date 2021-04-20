@@ -18,6 +18,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../pages/repos/index.css">
+    <link rel="shortcut icon" href="../repos/REDDIT-LOGO.svg" type="image/x-icon">
 </head>
 <style>
 body,
@@ -96,7 +97,7 @@ html {
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
 					<div class="brand_logo_container">
-						<img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png" class="brand_logo" alt="Logo">
+						<img src="../repos/REDDIT-LOGO.svg" class="brand_logo" alt="Logo" style="background-color: #f39c12 !important; opacity=0.8;">
 					</div>
 				</div>
 
